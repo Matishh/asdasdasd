@@ -1,0 +1,14 @@
+﻿@font-face {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/lato/v23/S6uyw4BMUTPHvxk-3.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(s/roboto/v30/KFOmCnqEu92Fr1Me5Q-3.ttf) format('truetype');
+}

